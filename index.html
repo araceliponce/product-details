@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Detalle de producto</title>
+</head>
+
+<body>
+  <div class="grid p-1">
+    <div class="grid--photos">
+      <div class="img--large"><img src="https://source.unsplash.com/500x500/?food,yellow" /></div>
+      <div class="img--small"><img src="https://source.unsplash.com/500x500/?food,orange" /></div>
+      <div class="img--small"><img src="https://source.unsplash.com/500x500/?food,small" /></div>
+      <div class="img--small"><img src="https://source.unsplash.com/500x500/?food,cheese" /></div>
+      <div class="img--small"><img src="https://source.unsplash.com/500x500/?food,mozzarella" /></div>
+    </div>
+    <div class="text">
+      <h1>Lorem, ipsum dolor sit amet </h1>
+      <div class="product-info is-columns">
+        <div class="en">
+          <p>Cheese ipsum dolor sit amet, consectetur adipiscing elit. Parmesan cheddar boursin, Swiss brie camembert halloumi edam manchego. Mozarella emmental gouda, pecorino feta provolone roquefort gorgonzola. Goat cheese danish fontina, taleggio blue cheese mozzarella. Cottage cheese stilton gouda, melted cheese havarti swiss cheese.</p>
+
+          <p>Edam cheese cream cheese, mascarpone ricotta cream cheese. Edam cheese gouda cheddar blue cheese camembert, gruyere cheese gorgonzola emmental roquefort. Cream cheese brie goat cheese, pecorino camembert gouda cheese. Manchego cheese swiss cheese, gorgonzola cheese mozzarella cheddar.</p>
+
+          <p>Parmesan gouda ricotta, mozzarella cheddar swiss cheese. Blue cheese gouda cream cheese, camembert brie mozzarella cheese. Cottage cheese feta cheese, gorgonzola emmental blue cheese boursin. Provolone cheese cheddar ricotta, manchego cheese mozzarella parmesan.</p>
+
+        </div>
+        <div class="es">
+          <p>Queso ipsum dolor sit amet, consectetur adipiscing elit. Parmesano cheddar boursin, brie suizo camembert halloumi edam manchego. Mozarella emmental gouda, pecorino feta provolone roquefort gorgonzola. Queso de cabra danish fontina, jarlsberg taleggio queso azul mozzarella. Cottage cheese stilton gouda, queso fundido havarti queso suizo.</p>
+
+          <p>Queso de bola queso fresco, mascarpone ricotta queso crema. Queso de bola gouda cheddar queso azul camembert, queso gruyere gorgonzola emmental roquefort. Queso crema brie queso de cabra, pecorino camembert queso gouda. Queso manchego queso suizo, queso gorgonzola mozzarella cheddar.</p>
+
+          <p>Parmesano gouda ricotta, mozzarella queso cheddar queso suizo. Queso azul gouda queso fresco, camembert queso brie mozzarella. Queso cottage queso feta, gorgonzola emmental queso azul boursin. Queso provolone cheddar ricotta, queso manchego mozzarella parmesano.</p>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+
+
+  <style>
+    body {
+      margin: 0;
+    }
+
+    img {
+      width: 100%;
+    }
+
+    .grid {
+      max-width: 1400px;
+      margin-inline: auto;
+      display: grid;
+      gap: 1rem;
+    }
+
+    @media (min-width: 600px) {
+      .grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    .p-1 {
+      padding: 1rem;
+    }
+
+    h1 {
+      font-weight: 400;
+      font-size: 3rem;
+      line-height: 1;
+      color: rgb(185, 50, 1);
+    }
+
+    .is-columns {
+      columns: 2;
+      column-width: 30ch;
+    }
+
+    .product-info {
+      line-height: 1.3;
+      color: #333;
+    }
+
+    .product-info:first-child {
+      margin-top: 0;
+    }
+
+    @media (min-width: 1000px) {
+      .grid--photos {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-content: start;
+        grid-gap: 1rem;
+      }
+    }
+
+    .img--large {
+      grid-row: 1;
+      grid-column: 1/-1;
+    }
+  </style>
+</body>
+
+</html>
